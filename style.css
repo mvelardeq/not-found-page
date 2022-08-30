@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500&family=Space+Mono:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --font-space-mono:'Space Mono', monospace;
+    --font-inconsolata:'Inconsolata', monospace;
+    --font-montserrat:'Montserrat', sans-serif;
+}
+html{
+    font-family: var(--font-space-mono)
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.container{
+    max-width: 1440px;
+    padding: 20px 24px 24px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.title-page{
+    font-family: var(--font-inconsolata)
+}
+.main{
+    display: flex;
+    flex-direction: column;
+}
+.hero-image{
+    margin: 64px auto 60px;
+    width:92%;
+    max-width: 540px;
+}
+.subtitle{
+    font-size: 40px;
+    font-weight: 700;
+}
+.paragraph-page{
+    font-size: 18px;
+    color: #4f4f4f;
+    margin-top: 30px;
+    margin-bottom: 66px;
+}
+.back-home{
+    padding: 24px 43px;
+    background-color: #333;
+    color: white;
+    margin-bottom: 114px;
+    cursor: pointer;
+    border: none;
+}
+.footer{
+    margin-top: auto;
+}
+.footer-description{
+    font-size: 14px;
+    color: #bdbdbd;
+    font-family: var(--font-montserrat);
+    text-align: center;
+}
+.creator-link{
+    text-decoration: underline;
+}
+@media(min-width:900px){
+    .container{
+        padding: 40px 77px 24px;
+    }
+    .main{
+        flex-direction: row;
+        margin: auto 0;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .subtitle{
+        font-size: 64px;
+        letter-spacing: -0.035em;
+    }
+    .description{
+        width:586px
+    }
+    .paragraph-page{
+        width: 381px;
+        margin-top: 36px;
+        letter-spacing: -0.035em;
+    }
+    .hero-image{
+        width: 40vw;
+        margin: 0;
+    }
+    .back-home{
+        margin-bottom: 0;
+    }
+}
